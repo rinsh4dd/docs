@@ -95,3 +95,14 @@ let obj_2 = { age: 23};
 let obj_3=Object.assign(obj_1,obj_2)
 
 console.log(obj_3);
+
+
+// 8. Object Length
+// You can find the number of properties in an object using Object.keys().
+
+
+
+
+let obj_4 = { name: "Sourav", age: 23 };
+console.log(Object.keys(obj_4).length);
+
