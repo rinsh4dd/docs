@@ -86,17 +86,28 @@ The map() function takes an array of values and applies a transformation to each
  It is often used to transform an array of data into a new array with a different structure. */
 
 
-function area(logic){
-return Math.PI * radius * radius
+function area(radius) {
+    return Math.PI * radius * radius
 }
 
+function diameter(radius) {
+    return 2 * radius
+}
+function circumference(radius) {
+    return 2 * Math.PI *radius *radius
+}
+
+
 const radius = [5, 6, 9, 8, 7]
-const calculateArea = function (radius,logic) {
+const calculateArea = function (radius,logic ) {
     let output = []
     for (let i = 0; i < radius.length; i++) {
-        output.push(logic(radius))
+        output.push(logic(radius[i]))
     }
     return output
 }
-console.log(calculateArea(radius))
-console.log(calculateArea(area))
+console.log(calculateArea(radius, area))
+console.log(calculateArea(radius, diameter))
+console.log(calculateArea(radius, circumference))
+
+
