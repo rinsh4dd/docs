@@ -33,14 +33,14 @@ Here, increment is not a pure function because it modifies the external variable
  */
 
 
-let c = 0;
-​
-function inc() {
-    c++;
-    return c;
-}
-console.log(inc());
-console.log(inc());
+// let c = 0;
+// ​
+// function inc() {
+//     c++;
+//     return c;
+// }
+// console.log(inc());
+// console.log(inc());
 
 //1
 //2
@@ -50,13 +50,13 @@ console.log(inc());
 Impure Functions: What to Avoid
 Impure functions produce unpredictable results or affect external states, which can lead to bugs and make your code harder to test.
  */
-let user = { name: "Meeta", age: 25 };
-​
-function updated(newAge) {
-    user.age = newAge;
-    return user;
-}
-​
-console.log(updated(26)); 
-// Alters the global `user` object
-console.log(user.age);
+// let user = { name: "Meeta", age: 25 };
+// ​
+// function updated(newAge) {
+//     user.age = newAge;
+//     return user;
+// }
+// ​
+// console.log(updated(26)); 
+// // Alters the global `user` object
+// console.log(user.age);
