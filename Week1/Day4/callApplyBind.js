@@ -26,6 +26,6 @@ printName.apply(name, ["kerala", 676551])
 
 //bind
 let printMyName = printName.bind(name3,"maharashtra",955995)
-printMyName()
+printMyName() 
 
 
