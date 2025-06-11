@@ -46,7 +46,52 @@ const { CloudHail } = require("lucide-react");
 //     map.set(arr[i],true),
 //     arr2.push(arr[i])
 //    }
-  
+
 // }
 //  console.log(map)
 //  console.log(arr2)
+
+
+// let arr = [1, 2, 3, 4, 5, 6,7,10,8]
+// let Largest = arr[0]
+// let secLargest = arr[0]
+// for (i = 0; i < arr.length; i++) {
+//     if (arr[i]>Largest) {
+//         secLargest=Largest
+//         Largest=arr[i]
+//     }else if (arr[i] > secLargest && arr[i] != Largest) {
+//         secLargest = arr[i];
+//     }
+// }
+//  console.log(secLargest)
+
+
+
+
+
+// let arr=[10,20,30,40,80,60,80,50]
+
+// let Largest=arr[0]//10//20//30//40//50//
+// let secLargest=arr[0]//10//20//30//40//
+// for(i=0;i<arr.length;i++){
+//    if(arr[i]>Largest){
+//     secLargest=Largest
+//     Largest=arr[i]
+//    }else if(arr[i]>secLargest && arr[i]!=Largest){
+//     secLargest=arr[i]
+//    }
+// }
+
+// console.log(Largest)
+// console.log(secLargest)
+
+// let arr=[1,2,3,4,5,6,5,6]
+
+// let uniqueArr=[...new Set(arr)]
+// // let arr2=uniqueArr.sort((a,b)=>{
+// //     return b-a
+
+// // })
+// const secLargest=uniqueArr[1]
+// console.log(uniqueArr)
+
