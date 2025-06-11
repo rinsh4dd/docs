@@ -30,23 +30,46 @@
 
 
 
-let obj1 = {
-    name: "Rinshad",
-    age: 21,
+// let obj1 = {
+//     name: "Rinshad",
+//     age: 21,
+
+// }
+// let fullDetails=function(state){
+//     console.log(this.name + " is "+ this.age +" year old and lives in " + state)
+// }
+
+
+
+// let obj2 = {
+//     name: "Sulaiman",
+//     age:25,
+// }
+// let obj3 = {
+//     name: "Arsha",
+//     age:21,
+// }
+// fullDetails.call(obj1, "malappuram")
+// fullDetails.apply(obj2, ["maharashtra"])
+// let fullDetailsNew=fullDetails.bind(obj3,"Puthanathani")
+// fullDetailsNew()
+
+
+let person1 = {
+    firstName: "mohammed",
+    lastName: "Rinshad",
 
 }
-let fullDetails=function(state){
-    console.log(this.name + " is "+ this.age +" year old and lives in " + state)
+
+function fullname(city) {
+    console.log(this.firstName + " " + this.lastName + " " +city)
 }
-let obj2 = {
-    name: "Sulaiman",
-    age:25,
+// person1.fullname()
+
+person2 = {
+    firstName: "Arsha",
+    lastName: "Beegam"
 }
-let obj3 = {
-    name: "Arsha",
-    age:21,
-}
-fullDetails.call(obj1, "malappuram")
-fullDetails.apply(obj2, ["maharashtra"])
-let fullDetailsNew=fullDetails.bind(obj3,"Puthanathani")
+
+let fullDetailsNew=fullname.bind(person1,'puthanathani')
 fullDetailsNew()

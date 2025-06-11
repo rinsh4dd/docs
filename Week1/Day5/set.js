@@ -42,4 +42,5 @@ set.add(60)
 set.add(60)
 set.add(60)
 
-console.log(set)
+
+console.log(set.values())

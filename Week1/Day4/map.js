@@ -1,8 +1,5 @@
 // const { get } = require("http");
 
-const { get } = require("http");
-const { CloudHail } = require("lucide-react");
-
 // let map = new Map();
 // map.set("Rinshad", "javascript")
 // map.set("arsha", "CVT")
@@ -15,9 +12,6 @@ const { CloudHail } = require("lucide-react");
 // for ( [k,v] of map){
 //     console.log(k," : ",v)
 // }
-
-
-
 
 // let myMap= new Map();
 // let anotherMap= new Map([
@@ -95,3 +89,53 @@ const { CloudHail } = require("lucide-react");
 // const secLargest=uniqueArr[1]
 // console.log(uniqueArr)
 
+// let greet = function(){
+//     console.log("hello")
+// }
+
+// setTimeout(greet,5000)
+
+// function createGreeter(){
+//     return greet
+// }
+// console.log(createGreeter())
+
+// function higherOrderFn(callback){
+//     callback()
+// }
+// console.log(higherOrderFn(()=>"hey"))
+
+
+// function rest(...nums){
+// return nums.reduce((a,b)=>a+=b)
+// }
+// console.log(rest(1,2,3,4,5))
+
+
+// let arr=[1,2,3,4,5]
+// let max=Math.max(...arr)
+
+// console.log(max)
+
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { ...obj1, c: 3 }; 
+// console.log(obj2)
+
+// function logNames(...names) {
+//    names.forEach(name => console.log(name));
+// }
+// logNames("Rinshad","Arsha")
+
+// function demo(a, b, ...rest) {
+//   console.log(rest);
+// }
+// demo(1, 2, 3, 4, 5); 
+
+// const user = {
+//   name: 'John',
+//   age: 30
+// };
+// const {name ,age}=user
+
+// console.log(name)
+// console.log(age)

@@ -1,6 +1,6 @@
 /* A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
 
-There are several different types of higher order functions like map and reduce. We will discuss these later in this tutorial.
+There are several different types of higher order functions like map and reduce.
  But before that let's first dive deep into what higher order functions are. */
 // Callback function, passed as a parameter in the higher order function
 /* function callbackFunction(){
@@ -86,28 +86,67 @@ The map() function takes an array of values and applies a transformation to each
  It is often used to transform an array of data into a new array with a different structure. */
 
 
+// function area(radius) {
+//     return Math.PI * radius * radius
+// }
+
+// function diameter(radius) {
+//     return 2 * radius
+// }
+// function circumference(radius) {
+//     return 2 * Math.PI * radius * radius
+// }
+
+
+// const radius = [5, 6, 9, 8, 7]
+// const calculateArea = function (radius, logic) {
+//     let output = []
+//     for (let i = 0; i < radius.length; i++) {
+//         output.push(logic(radius[i]))
+//     }
+//     return output
+// }
+// console.log(calculateArea(radius, area))
+// console.log(calculateArea(radius, diameter))
+// console.log(calculateArea(radius, circumference))
+
+
+
+// const radius = [10, 11, 22, 5, 6, 3]
+// let calculate = function (radius) {
+//     let output=[]
+//     for (i = 0; i < radius.length; i++) {
+//         output.push(Math.PI*radius[i]*radius[i])
+//     }
+//     return output;
+// }
+// console.log(calculate())
+
+
+let radius = [5, 6, 7, 8, 9]
+
+function circumference(radius) {
+    return 2*Math.PI *radius
+}
+
 function area(radius) {
     return Math.PI * radius * radius
 }
 
-function diameter(radius) {
-    return 2 * radius
-}
-function circumference(radius) {
-    return 2 * Math.PI *radius *radius
+function Diameter(radius) {
+    return radius + radius
 }
 
 
-const radius = [5, 6, 9, 8, 7]
-const calculateArea = function (radius,logic ) {
+
+let a=function calculate(radius, logic) {
     let output = []
-    for (let i = 0; i < radius.length; i++) {
+    for (i = 0; i < radius.length; i++) {
         output.push(logic(radius[i]))
     }
-    return output
+return output
 }
-console.log(calculateArea(radius, area))
-console.log(calculateArea(radius, diameter))
-console.log(calculateArea(radius, circumference))
 
-
+console.log(a(radius, area))
+console.log(calculate(radius, Diameter))
+console.log(calculate(radius,circumference))
