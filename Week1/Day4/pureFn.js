@@ -5,11 +5,11 @@ They do not modify external states or depend on mutable data.
 Often used with immutable data structures to ensure reliability.
 Their independence from external states makes them highly reusable.
  */
-function add(a, b) {
-    return a + b;
-}
-console.log(add(2, 3)); 
-console.log(add(2, 3));
+// function add(a, b) {
+//     return a + b;
+// }
+// console.log(add(2, 3)); 
+// console.log(add(2, 3));
 /* 
 It always returns the same result for the same input.
 It does not modify any external variables or state.
@@ -60,3 +60,29 @@ Impure functions produce unpredictable results or affect external states, which 
 // console.log(updated(26)); 
 // // Alters the global `user` object
 // console.log(user.age);
+
+
+// let count = 0
+// function num(a, b) {
+//     count = a + b;
+//     return count
+// }
+// console.log(num(15, 556))
+
+
+
+// function sayGoodBye(){
+//     console.log("Good bye")
+// }
+
+
+// function greet(name,nafila){
+//     console.log("Hello ," +name)
+//     callback()
+// }
+
+
+// greet ("Rinshad",)
+
+
+
