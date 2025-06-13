@@ -35,3 +35,26 @@ console.log("End"); */
 /* Hi
 End
 Geek */
+
+//   setTimeout(() => {
+// console.log('starting process')
+//   },  2000)
+//   {
+//   setTimeout(() => {
+// console.log('loading data')
+//   }, 4000)
+// }
+// {
+//   setTimeout(() => {
+// console.log('end process')
+//   }, 6000)
+// }
+
+
+
+let arr=["Starting process","loading process","end process"]
+for(let i=0;i<arr.length;i++){
+setTimeout(()=>{
+  console.log(arr[i])
+},i*5000)
+}
