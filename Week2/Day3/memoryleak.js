@@ -16,12 +16,13 @@ function memoryLeakExample() {
 // const leaked = memoryLeakExample();
 // Now 'largeData' is still in memory even though we don’t need it anymore
 
-function memoryLeak() {
-    let largeData = new Array(1000000).fill("🤎");
+// function memoryLeak() {
+//     let largeData = new Array(1000000).fill("🤎");
 
-    return function innerFunction() {
-        console.log("Doing something...");
-    };
-}
-const leaked = memoryLeak()
-console.log(leaked())
+//     return function innerFunction() {
+//         console.log("Doing something...");
+//     };
+// }
+// const leaked = memoryLeak()
+// console.log(leaked())
+
