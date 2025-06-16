@@ -95,10 +95,9 @@ console.log(a) */
 // console.log(a)
 
 
-"use strict"
-var a=10
-{
-    let a=100
-    console.log(a)
-}
-console.log(a)
+// "use strict"
+// var a=10
+// {
+    //     let a=100
+    //     console.log(a)
+    // }
