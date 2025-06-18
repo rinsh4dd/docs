@@ -50,47 +50,48 @@
 // })
 
 
-function loginPage(){
-    return new Promise((resolve,reject)=>{
-        console.log("login here")
-        setTimeout(()=>{
-        console.log("login Successfull")    
-            resolve()
-        },4000)
-    })
-}
-function showCart(){
-    return new Promise((resolve,reject)=>{
-        console.log("Loading Carts Page")
-        setTimeout(()=>{
-            console.log("Showing Carts....")
-            resolve()
-        },3000)
-    })
-}
-function addToCart(){
-    return new Promise((resolve,reject)=>{
-        console.log("Add to cart")
-        setTimeout(()=>{
-            console.log("cart added successfully")
-            resolve()
-        },4000)
-    })
-}
-function payment(){
-    return new Promise((resolve,reject)=>{
-        console.log("payment")
-        setTimeout(()=>{
-            console.log("Payment Successfull")
-            reject()
-        },4000)
-    })
-}
+// function loginPage(){
+//     return new Promise((resolve,reject)=>{
+//         console.log("login here")
+//         setTimeout(()=>{
+//         console.log("login Successfull")    
+//             resolve()
+//         },4000)
+//     })
+// }
+// function showCart(){
+//     return new Promise((resolve,reject)=>{
+//         console.log("Loading Carts Page")
+//         setTimeout(()=>{
+//             console.log("Showing Carts....")
+//             resolve()
+//         },3000)
+//     })
+// }
+// function addToCart(){
+//     return new Promise((resolve,reject)=>{
+//         console.log("Add to cart")
+//         setTimeout(()=>{
+//             console.log("cart added successfully")
+//             resolve()
+//         },4000)
+//     })
+// }
+// function payment(){
+//     return new Promise((resolve,reject)=>{
+//         console.log("payment")
+//         setTimeout(()=>{
+//             console.log("Payment Successfull")
+//             reject()
+//         },4000)
+//     })
+// }
 
-loginPage()
-.then(showCart)
-.then(addToCart)
-.then(payment)
-.catch(()=>{
-    console.log("Error Cant Fetch")
-})
+// loginPage()
+// .then(showCart)
+// .then(addToCart)
+// .then(payment)
+// .catch(()=>{
+//     console.log("Error Cant Fetch")
+// })
+

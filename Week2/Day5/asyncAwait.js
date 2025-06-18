@@ -83,36 +83,36 @@
 
 
 
-const prm1 = new Promise((resolve, reject) => {
-    console.log("Login page")
-    setTimeout(() => {
-        reject('login done...')
-    }, 3000)
-})
-const prm2 = new Promise((resolve, reject) => {
-    console.log("Loading Profile")
-   setTimeout(() => {
-    console.log("Profile loaded")
-    resolve()
-   }, 3000);
-})
+// const prm1 = new Promise((resolve, reject) => {
+//     console.log("Login page")
+//     setTimeout(() => {
+//         reject('login done...')
+//     }, 3000)
+// })
+// const prm2 = new Promise((resolve, reject) => {
+//     console.log("Loading Profile")
+//    setTimeout(() => {
+//     console.log("Profile loaded")
+//     resolve()
+//    }, 3000);
+// })
 
-const prm3 = new Promise((resolve, reject) => {
-    console.log("Loading Posts")
-    setTimeout(() => {
-        console.log("post Loaded")
-        resolve()
-    },
-        3000
-    )
-})
-const prm4 = new Promise((resolve, reject) => {
-    console.log("Loading comments")
-    setTimeout(() => {
-        console.log("commentss Loaded")
-        resolve()
-    }, 3000)
-})
+// const prm3 = new Promise((resolve, reject) => {
+//     console.log("Loading Posts")
+//     setTimeout(() => {
+//         console.log("post Loaded")
+//         resolve()
+//     },
+//         3000
+//     )
+// })
+// const prm4 = new Promise((resolve, reject) => {
+//     console.log("Loading comments")
+//     setTimeout(() => {
+//         console.log("commentss Loaded")
+//         resolve()
+//     }, 3000)
+// })
 
 // prm1
 // .then(()=>prm2)
@@ -135,3 +135,17 @@ const prm4 = new Promise((resolve, reject) => {
 //     }
 // }
 // run()
+function delay() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve("Done!"), 2000);
+  });
+}
+
+async function test() {
+  console.log("Start");
+  let result = await delay();
+  console.log(result);
+  console.log("End");
+}
+
+test();
